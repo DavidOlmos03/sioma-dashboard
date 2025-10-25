@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const axiosInstance = axios.create({
-  baseURL: 'http://44.193.214.130:8000/api', // Asumiendo que la API se ejecuta en el puerto 8000
+  baseURL: 'http://localhost:8000/api', // Asumiendo que la API se ejecuta en el puerto 8000
 });
 
 // Interceptor para añadir el token de autenticación a cada solicitud

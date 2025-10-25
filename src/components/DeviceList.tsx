@@ -19,6 +19,7 @@ const DeviceList: React.FC<DeviceListProps> = ({ devices, onDeactivate }) => {
             <TableCell>Name</TableCell>
             <TableCell>Model</TableCell>
             <TableCell>Device ID</TableCell>
+            <TableCell>Tenant ID</TableCell>
             <TableCell>Registered At</TableCell>
             <TableCell>Last Sync</TableCell>
             <TableCell>Status</TableCell>
@@ -36,6 +37,7 @@ const DeviceList: React.FC<DeviceListProps> = ({ devices, onDeactivate }) => {
               </TableCell>
               <TableCell>{device.device_model}</TableCell>
               <TableCell>{device.device_id}</TableCell>
+              <TableCell>{device.tenant_id}</TableCell>
               <TableCell>{new Date(device.registered_at).toLocaleString()}</TableCell>
               <TableCell>{new Date(device.last_sync_at).toLocaleString()}</TableCell>
               <TableCell>
